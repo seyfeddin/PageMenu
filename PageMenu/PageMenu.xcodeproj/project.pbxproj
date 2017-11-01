@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		C797E14E1BAB764400D2808F /* PageMenuFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C797E14D1BAB764400D2808F /* PageMenuFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C797E1581BAB765100D2808F /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797E1441BAB754600D2808F /* CAPSPageMenu.swift */; };
+		CD9BBB431FAA467100694D76 /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBB3D1FAA467100694D76 /* CAPSPageMenu+Options.swift */; };
+		CD9BBB441FAA467100694D76 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBB3E1FAA467100694D76 /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		CD9BBB451FAA467100694D76 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBB3F1FAA467100694D76 /* MenuItemView.swift */; };
+		CD9BBB461FAA467100694D76 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBB401FAA467100694D76 /* CAPSPageMenuConfiguration.swift */; };
+		CD9BBB471FAA467100694D76 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBB411FAA467100694D76 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		CD9BBB481FAA467100694D76 /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BBB421FAA467100694D76 /* CAPSPageMenu+UIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +23,12 @@
 		C797E14B1BAB764400D2808F /* PageMenuFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PageMenuFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C797E14D1BAB764400D2808F /* PageMenuFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageMenuFramework.h; sourceTree = "<group>"; };
 		C797E14F1BAB764400D2808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9BBB3D1FAA467100694D76 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
+		CD9BBB3E1FAA467100694D76 /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		CD9BBB3F1FAA467100694D76 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		CD9BBB401FAA467100694D76 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		CD9BBB411FAA467100694D76 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		CD9BBB421FAA467100694D76 /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				C797E1441BAB754600D2808F /* CAPSPageMenu.swift */,
+				CD9BBB3D1FAA467100694D76 /* CAPSPageMenu+Options.swift */,
+				CD9BBB421FAA467100694D76 /* CAPSPageMenu+UIConfiguration.swift */,
+				CD9BBB411FAA467100694D76 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				CD9BBB3E1FAA467100694D76 /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				CD9BBB401FAA467100694D76 /* CAPSPageMenuConfiguration.swift */,
+				CD9BBB3F1FAA467100694D76 /* MenuItemView.swift */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -117,7 +135,7 @@
 				TargetAttributes = {
 					C797E14A1BAB764400D2808F = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0910;
 					};
 				};
 			};
@@ -154,7 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9BBB461FAA467100694D76 /* CAPSPageMenuConfiguration.swift in Sources */,
+				CD9BBB451FAA467100694D76 /* MenuItemView.swift in Sources */,
 				C797E1581BAB765100D2808F /* CAPSPageMenu.swift in Sources */,
+				CD9BBB441FAA467100694D76 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				CD9BBB431FAA467100694D76 /* CAPSPageMenu+Options.swift in Sources */,
+				CD9BBB481FAA467100694D76 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				CD9BBB471FAA467100694D76 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +282,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PageMenu.PageMenuFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -278,7 +303,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PageMenu.PageMenuFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
